@@ -1,0 +1,16 @@
+<div class="container">
+
+<h1>Insects</h1>
+<br>
+<button (click)="getInsects()">Get insect</button>
+<br>
+<ul>
+  <li *ngFor="let ins of insectList" style="list-style-type: none; border-radius: 5px; background-color: rgb(41, 218, 6);  margin-left: 15%; margin-right: 15%; margin-top: 15px; margin-bottom: 10px; text-align: center">
+    <br>
+    <h4>{{ins.title}}</h4> <br> <img src="{{ins.picture}}" height="120" width="120"><br><br>
+    {{ins.desc}}
+    <br><br>
+  </li>
+</ul>
+
+</div>
